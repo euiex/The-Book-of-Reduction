@@ -10,3 +10,4 @@
 Искренне приветствуем любые дискуссии, уточнения и новые гипотезы — ведь именно в живом обмене идеями рождается подлинное понимание.
 
 [Глава 1 Эйн Соф - начало которого нет](https://github.com/euiex/The-Book-of-Reduction/blob/main/russian_version/ein_sof.md)  
+2. [Термины и обозначения](https://github.com/euiex/The-Book-of-Reduction/blob/main/russian_version/termini_i_oboznacheniya.md)  
