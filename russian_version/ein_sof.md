@@ -248,7 +248,7 @@ $$
 Это и делает Эйн Соф не "ничто", а всё-в-возможности,
 как до-онтологический модус мышления, языка, мира.
 
-2. [Термины и обозначения](https://github.com/euiex/The-Book-of-Reduction/blob/main/russian_version/termini_i_oboznacheniya.md)  
+ [Термины и обозначения](https://github.com/euiex/The-Book-of-Reduction/blob/main/russian_version/termini_i_oboznacheniya.md)  
 
 ### 📎 Примечания и источники
 
