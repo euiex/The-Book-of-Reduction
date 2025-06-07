@@ -41,75 +41,37 @@
 
 * $K_O A$: Оператор знания.
 
----
+📐 B. Правила Вывода MQPL
 
-## 📐 B. Правила Вывода MQPL
+Правила вывода MQPL определяют допустимые шаги вывода из множества аксиом и ранее выведенных формул. Пусть A,B,C обозначают произвольные формулы MQPL.
+I. Основы: Квантовая логика (Q-секция)
 
-Правила вывода **MQPL** определяют допустимые шаги вывода из множества аксиом и ранее выведенных формул. Пусть <span class="math-inline">A, B, C</span> обозначают произвольные формулы MQPL.
+Пусть A,B,C — утверждения MQPL, соответствующие проекционным операторам (или подпространствам) в гильбертовом пространстве H. Логика основана на ортомодулярной решётке проекторов.
+1.1. (Q-TAUT) — Квантовые тавтологии
 
----
-
-### I. Основы: Квантовая логика (Q-секция)
-
-Пусть <span class="math-inline">A, B, C</span> — утверждения MQPL, соответствующие проекционным операторам (или подпространствам) в гильбертовом пространстве <span class="math-inline">H</span>. Логика основана на ортомодулярной решётке проекторов.
-
-1.1. **(Q-TAUT)** — Квантовые тавтологии
 Любые тавтологии классической логики допустимы только в пределах совместимых (коммутирующих) подпространств.
+1.2. (MP) — Modus Ponens
 
-1.2. **(MP)** — Modus Ponens
-<span class="math-block">\\frac\{A \\to B, A\}\{B\}</span>
+BA→B,A​
+1.3. (Q-Orthocomplementation)
 
-1.3. **(Q-Orthocomplementation)**
-<span class="math-inline">A \\land \\neg A \\equiv 0</span>
-<span class="math-inline">A \\lor \\neg A \\equiv 1</span>
+A∧¬A≡0
+A∨¬A≡1
+1.4. (Q-Projection)
 
-1.4. **(Q-Projection)**
-<span class="math-inline">\\hat\{P\}\_A \= \\hat\{P\}\_A^2</span>
-<span class="math-inline">\\hat\{P\}\_A \= \\hat\{P\}\_A^\\dagger</span>
+P^A​=P^A2​
+P^A​=P^A†​
+1.5. (Q-Conjunction)
 
-1.5. **(Q-Conjunction)**
-<span class="math-inline">\(A \\land B\) \\to A</span>
-<span class="math-inline">\(A \\land B\) \\to B</span>
-Если <span class="math-inline">C \\to A</span> и <span class="math-inline">C \\to B</span>, то <span class="math-inline">C \\to \(A \\land B\)</span>.
+(A∧B)→A
+(A∧B)→B
+Если C→A и C→B, то C→(A∧B).
+1.6. (Q-Disjunction)
 
-1.6. **(Q-Disjunction)**
-<span class="math-inline">A \\to \(A \\lor B\)</span>
-<span class="math-inline">B \\to \(A \\lor B\)</span>
-Если <span class="math-inline">A \\to C</span> и <span class="math-inline">B \\to C</span>, то <span class="math-inline">\(A \\lor B\) \\to C</span>.
+A→(A∨B)
+B→(A∨B)
+Если A→C и B→C, то (A∨B)→C.
+1.7. (Q-Modularity) — Ортомодулярность
 
-1.7. **(Q-Modularity)** — Ортомодулярность
-Если <span class="math-inline">A \\to B</span>, то: <span class="math-inline">B \\land \(A \\lor \(B \\land \\neg A\)\) \\equiv A \\lor \(B \\land \\neg A\)</span>.
-
----
-
-### II. Модальные правила (<span class="math-inline">\\Box, \\diamond</span>)
-
-2.1. **(K)** <span class="math-inline">\\Box\(A \\to B\) \\to \(\\Box A \\to \\Box B\)</span>
-2.2. **(T)** <span class="math-inline">\\Box A \\to A</span>
-2.3. **(S4)** <span class="math-inline">\\Box A \\to \\Box \\Box A</span>
-2.4. **(S5)** <span class="math-inline">\\diamond A \\to \\Box \\diamond A</span>
-
-А также, по определению: <span class="math-inline">\\diamond A \\equiv \\neg \\Box \\neg A</span> и <span class="math-inline">\\Box A \\equiv \\neg \\diamond \\neg A</span>.
-
-2.5. **(RN)** — Rule of Necessitation
-<span class="math-block">\\frac\{\\vdash A\}\{\\vdash \\Box A\}</span>
-
----
-
-### III. Правила Знания (<span class="math-inline">K\_O</span>)
-
-3.1. **(<span class="math-inline">K\_O</span>-K)** <span class="math-inline">K\_O\(A \\to B\) \\to \(K\_O A \\to K\_O B\)</span>
-3.2. **(<span class="math-inline">K\_O</span>-T)** <span class="math-inline">K\_O A \\to A</span>
-3.3. **(<span class="math-inline">K\_O</span>-S4)** <span class="math-inline">K\_O A \\to K\_O K\_O A</span>
-3.4. **(<span class="math-inline">K\_O</span>-S5)** <span class="math-inline">\\neg K\_O A \\to K\_O \\neg K\_O A</span>
-3.5. **(Gen <span class="math-inline">K\_O</span>)**
-<span class="math-block">\\frac\{\\vdash A\}\{\\vdash K\_O A\}</span>
-
----
-
-### IV. Правила взаимодействия (Квант + Модальность + Знание)
-
-4.1. **(Int-1)** Измерение и Знание: <span class="math-inline">K\_O A \\to \\Box A</span>
-4.2. **(Int-2)** Возможность Знания: <span class="math-inline">\\diamond A \\to \\diamond K\_O A</span>
-4.3. **(Int-3)** Последовательность Знания: <span class="math-inline">K\_O A \\to \\neg K\_O \\neg A</span>
+Если A→B, то: B∧(A∨(B∧¬A))≡A∨(B∧¬A).
 
