@@ -81,3 +81,53 @@ $$\hat{P}_A = \hat{P}_A^\dagger$$
 #### 1.7. (Q-Modularity) — Ортомодулярность
 
 Если $A \to B$, то: $B \land (A \lor (B \land \neg A)) \equiv A \lor (B \land \neg A)$.
+
+## II. Модальные правила ($\Box, \diamond$)
+
+### 2.1. (K)
+$$\Box(A \to B) \to (\Box A \to \Box B)$$
+
+### 2.2. (T)
+$$\Box A \to A$$
+
+### 2.3. (S4)
+$$\Box A \to \Box \Box A$$
+
+### 2.4. (S5)
+$$\diamond A \to \Box \diamond A$$
+А также, по определению: $\diamond A \equiv \neg \Box \neg A$ и $\Box A \equiv \neg \diamond \neg A$.
+
+### 2.5. (RN) — Rule of Necessitation
+$$\frac{\vdash A}{\vdash \Box A}$$
+
+---
+
+## III. Правила Знания ($K_O$)
+
+### 3.1. ($K_O$-K)
+$$K_O(A \to B) \to (K_O A \to K_O B)$$
+
+### 3.2. ($K_O$-T)
+$$K_O A \to A$$
+
+### 3.3. ($K_O$-S4)
+$$K_O A \to K_O K_O A$$
+
+### 3.4. ($K_O$-S5)
+$$\neg K_O A \to K_O \neg K_O A$$
+
+### 3.5. (Gen $K_O$)
+$$\frac{\vdash A}{\vdash K_O A}$$
+
+---
+
+## IV. Правила взаимодействия (Квант + Модальность + Знание)
+
+### 4.1. (Int-1) Измерение и Знание
+$$K_O A \to \Box A$$
+
+### 4.2. (Int-2) Возможность Знания
+$$\diamond A \to \diamond K_O A$$
+
+### 4.3. (Int-3) Последовательность Знания
+$$K_O A \to \neg K_O \neg A$$
